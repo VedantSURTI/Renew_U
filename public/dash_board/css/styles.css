@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c0deff;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+/* navbar */
+.bg-custom {
+  background-color: #ecf2ff;
+  opacity: 70%;
+}
+
+.nav-item {
+  padding: 0 15px;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  padding: 0 3%;
+}
+
+#dash {
+  font-size: larger;
+  margin-left: 20%;
+  /* margin-right: 25%; */
+  margin-top: 3%;
+}
+.message {
+  width: 50%;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: black;
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+}
+.form__submit {
+  margin-top: 200px;
+}
+/* #output {
+  margin-left: 35%;
+} */
+/* landingpage content */
+/* .main_content {
+  align-items: center;
+  margin-top: 18%;
+  text-align: center;
+}
+
+.main_content h1 {
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 600px) {
+  .main_content {
+    margin-top: 28%;
+  }
+
+  .main_content h1 {
+    font-size: 2.8rem;
+  }
+}
+
+/* selfcare */
+/* #selfcare {
+  text-align: center;
+  align-items: center;
+}
+
+.selfcare_cont {
+  align-items: center;
+  margin-top: 3%;
+  text-align: center; */
+.dropdown {
+  margin: 2rem;
+}
+
+#myChart {
+  margin: auto;
+  height: 600px !important;
+  width: 900px !important;
+}
+
+.calculate {
+  background-color: #fff4d2;
+  border: none;
+  padding: 10px;
+  border-radius: 22px;
+  font-size: 20px;
+}

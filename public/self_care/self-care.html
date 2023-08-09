@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self Care</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="self-care.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">RenewU</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index1 LoggedIn.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:4000/"
+                >Connect</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../self_care/self-care.html"
+                >Self-care</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../dash_board/index.html"
+                >Dashboard</a
+              >
+            </li>
+                
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Dropdown section -->
+    <div class="parent">
+        <div class="child1" style="max-width: 35rem;">
+            <select class="drop" onchange="updateData()">
+                <option>---</option>
+                <option>Happy</option>
+                <option>Lonely</option>
+                <option>Sad</option>
+                <option>Depressed</option>
+            </select>
+            <div class="text-data" style="border-style: solid;">
+                <p id="text"></p>
+            </div>
+        </div>
+        <div class="child2">
+            <div id="Lonely">
+                <div class="row">
+                    <div class="col">
+                    <div class="card  mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Start Your Day Right</div>
+                        <div class="card-body">
+                          <h5 class="card-title">8:00 AM to 12:00 PM</h5>
+                          <p class="card-text">
+                            <h3> Wake up and get out of bed</h3>
+                            <h6>Engage in mindfulness or relaxation techniques for 10-15 minutes. Take a shower and get dressed in comfortable clothing. Have a light breakfast, such as fruit, yogurt, or oatmeal</h6></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                    <div class="card  mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Mid-day break</div>
+                        <div class="card-body">
+                          <h5 class="card-title">12:00 PM to 04:00 PM</h5>
+                          <p class="card-text">
+                            <h3>Get outside and get some sunshine</h3>
+                            <h6>Volunteer at a local organization, join a class or group, or participate in an activity with others. Consider an activity that involves helping others, such as volunteering at a food bank or animal shelter</h6></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                    <div class="card  mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Sun sets to rise</div>
+                        <div class="card-body">
+                          <h5 class="card-title">04:00 PM to 08:00 PM</h5>
+                          <p class="card-text">
+                            <h3>Participate in a hobby or activity that brings joy</h3>
+                            <h6>Engage in an activity that brings joy or relaxation, such as painting, playing music, or writing. Consider setting a goal or challenge related to the activity to keep motivation high</h6></p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                        <div class="card  mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Night times</div>
+                            <div class="card-body">
+                              <h5 class="card-title">8:00 PM to 12:00 AM</h5>
+                              <p class="card-text">
+                                <h3>Connect with loved ones</h3>
+                                <h6>Call or video chat with friends or family members. Consider arranging a shared activity, such as watching a movie or playing a game together online</h6></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div id="Sad">
+                <div class="row">
+                    <div class="col">
+                    <div class="card  mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Start Your Day Right</div>
+                        <div class="card-body">
+                          <h5 class="card-title">8:00 AM to 12:00 PM</h5>
+                          <p class="card-text">
+                            <h3> Wake up and get out of bed</h3>
+                            <h6>Engage in mindfulness or relaxation techniques for 10-15 minutes. Take a shower and get dressed in comfortable clothing. Have a light breakfast, such as fruit, yogurt, or oatmeal</h6></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                    <div class="card  mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Mid-day break</div>
+                        <div class="card-body">
+                          <h5 class="card-title">12:00 PM to 04:00 PM</h5>
+                          <p class="card-text">
+                            <h3>Get outside and get some sunshine</h3>
+                            <h6>Take a walk outside or sit in a sunny spot for 15-20 minutes. Bring a healthy snack to enjoy while outside</h6></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                    <div class="card  mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Sun sets to rise</div>
+                        <div class="card-body">
+                          <h5 class="card-title">04:00 PM to 08:00 PM</h5>
+                          <p class="card-text">
+                            <h3>Participate in a hobby or activity that brings joy</h3>
+                            <h6>Engage in an activity that brings joy or relaxation, such as painting, playing music, or writing. Consider setting a goal or challenge related to the activity to keep motivation high</h6></p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                        <div class="card  mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Night times</div>
+                            <div class="card-body">
+                              <h5 class="card-title">8:00 PM to 12:00 AM</h5>
+                              <p class="card-text">
+                                <h3>Have a nutritious dinner</h3>
+                                <h6>Choose a healthy, balanced meal with plenty of fruits, vegetables, lean protein, and whole grains. Consider inviting a friend or family member to join for a shared meal and conversation</h6></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                
+            <!-- </div> -->
+            <div id="Depressed">
+                <div class="row">
+                    <div class="col">
+                    <div class="card  mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Start Your Day Right</div>
+                        <div class="card-body">
+                          <h5 class="card-title">8:00 AM to 12:00 PM</h5>
+                          <p class="card-text">
+                            <h3>A Good Start</h3>
+                            <h6>Start the day with a productive task. Engage in a task that gives a sense of accomplishment, such as making the bed, doing the dishes, or completing a work-related task</h6></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                    <div class="card  mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Mid-day break</div>
+                        <div class="card-body">
+                          <h5 class="card-title">12:00 PM to 04:00 PM</h5>
+                          <p class="card-text">
+                            <h3>Good food , good life!</h3>
+                            <h6>Have a healthy lunch. Choose a healthy, balanced meal with plenty of fruits, vegetables, lean protein, and whole grains</h6></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                    <div class="card  mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Sun sets to rise</div>
+                        <div class="card-body">
+                          <h5 class="card-title">04:00 PM to 08:00 PM</h5>
+                          <p class="card-text">
+                            <h3>Read</h3>
+                            <h6>Participate in a relaxing activity. Engage in an activity that promotes relaxation, such as reading a book, taking a bath, or listening to music.
+                                <a href="https://markmanson.net/5-books-for-dealing-with-anxiety-and-depression">Read Books</a>
+                            </h6></p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                        <div class="card  mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Night times</div>
+                            <div class="card-body">
+                              <h5 class="card-title">8:00 PM to 12:00 AM</h5>
+                              <p class="card-text">
+                                <h3>The day deserves a good end</h3>
+                                <h6><a href="https://www.healthline.com/health/mental-health/depression-podcast">After having a good dinner and talking to your loved ones listen to some podcasts</a></h6></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Happy">
+                <div class="row">
+                    <div class="col">
+                    <div class="card  mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Start Your Day Right</div>
+                        <div class="card-body">
+                          <h5 class="card-title">8:00 AM to 12:00 PM</h5>
+                          <p class="card-text">
+                            <h3>Wake up and start the day with gratitude</h3>
+                            <h6>Begin the day by thinking of 3-5 things that you're grateful for. Engage in a mindfulness or meditation practice for 10-15 minutes
+                                </h6></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                    <div class="card  mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Mid-day break</div>
+                        <div class="card-body">
+                          <h5 class="card-title">12:00 PM to 04:00 PM</h5>
+                          <p class="card-text">
+                            <h3> Have a healthy lunch</h3>
+                            <h6>Choose a healthy, balanced meal with plenty of fruits, vegetables, lean protein, and whole grains. Consider sharing the meal with a friend or loved one</h6></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                    <div class="card  mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Sun sets to rise</div>
+                        <div class="card-body">
+                          <h5 class="card-title">04:00 PM to 08:00 PM</h5>
+                          <p class="card-text">
+                            <h3>Participate in a physical activity or hobby</h3>
+                            <h6>Engage in a physical activity that brings joy, such as running, yoga, or dancing. Consider joining a group or class to meet new people who share similar interests</h6></p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                        <div class="card  mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Night times</div>
+                            <div class="card-body">
+                              <h5 class="card-title">8:00 PM to 12:00 AM</h5>
+                              <p class="card-text">
+                                <h3>Connect with loved ones and wind down for the evening</h3>
+                                <h6>Have a nutritious dinner with loved ones. Engage in a relaxing activity, such as reading, taking a bath, or listening to music</h6></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrapjs -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="self-care.js"></script>
+  </body>
+</html>

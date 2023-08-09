@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #c0deff;
+  /* background-image: url("./blob-scene-haikei.svg"); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+}
+
+section.chat__section {
+  width: 80rem;
+  max-width: 90%;
+  background: #fff8e1;
+  border-radius: 5px;
+  margin: 5% auto;
+}
+
+.brand {
+  padding: 2rem;
+  background-color: #5c568a;
+}
+
+.brand h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.message__area {
+  height: 50rem;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-top: 4rem;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  font-size: 2.3rem;
+  text-transform: capitalize;
+  outline: none;
+}
+
+.message {
+  padding: 2rem;
+  position: relative;
+  max-width: 20rem;
+  margin: 2rem;
+}
+
+.incoming {
+  background: black;
+  color: white;
+}
+
+.outgoing {
+  background: rgb(135, 132, 132);
+  margin-left: auto;
+}
+
+.message h4 {
+  position: absolute;
+  top: -2rem;
+  font-size: 1.2rem;
+  color: chartreuse;
+}

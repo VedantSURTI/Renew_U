@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ecf2ff;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+#title {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../image/mbg.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* navbar */
+.bg-custom {
+  background-color: #ecf2ff;
+  opacity: 70%;
+}
+
+.nav-item {
+  padding: 0 15px;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  padding: 0 3%;
+}
+
+/* landingpage content */
+.main_content {
+  align-items: center;
+  margin-top: 18%;
+  text-align: center;
+}
+
+.main_content h1 {
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 600px) {
+  .main_content {
+    margin-top: 28%;
+  }
+
+  .main_content h1 {
+    font-size: 2.8rem;
+  }
+}
+
+/* bot */
+.parent {
+  position: relative;
+}
+
+.bot {
+  position: absolute;
+  bottom: -46%;
+  right: 2%;
+  cursor: pointer;
+}
+
+.fa_colour {
+  color: #5b5682;
+}

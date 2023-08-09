@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dashboard</title>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- bootstrapjs -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <section id="title">
+      <div class="container-fluid">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">RenewU</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index1 LoggedIn.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="http://127.0.0.1:4000/"
+                    >Connect</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../self_care/self-care.html"
+                    >Self-care</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../dash_board/index.html"
+                    >Dashboard</a
+                  >
+                </li>
+                    
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+    </section>
+
+    <section id="dash">
+        <div class="row">
+
+        <div class="col">
+        <form>
+            <div class="dash_main">
+                <div class="dropdown row">
+                    <div class="col-lg-6">     <label for="my-dropdown">Select a value corresponding to job insecurity</label></div>
+                    <div class="col-lg-2"><select id="Job Insecurity" name="Job Insecurity">
+    
+      <option value="0"> 0</option>
+      <option value="1"> 1</option>
+      <option value="2"> 2</option>
+      <option value="3"> 3</option>
+      <option value="4"> 4</option>
+      <option value="5"> 5</option>
+    </select></div>
+                </div>
+                <div class="dropdown row">
+                    <div class="col-lg-6">     <label for="my-dropdown">Select a value corresponding to your social support</label></div>
+                    <div class="col-lg-2"><select id="financial stress" name="financial stress">
+        <option value="0"> 0</option>
+      <option value="1"> 1</option>
+      <option value="2"> 2</option>
+      <option value="3"> 3</option>
+      <option value="4"> 4</option>
+      <option value="5"> 5</option>
+    </select></div>
+                </div>
+                <div class="dropdown row">
+               <div class="col-lg-6">    <label for="my-dropdown">Select a value corresponding to work life balance</label></div> 
+    <div class="col-lg-2"><select id="work life balance" name="work life balance">
+        <option value="0"> 0</option>
+      <option value="1"> 1</option>
+      <option value="2"> 2</option>
+      <option value="3"> 3</option>
+      <option value="4"> 4</option>
+      <option value="5"> 5</option>
+    </select></div>
+                </div>
+                <div class="dropdown row">
+                    <div class="col-lg-6"> <label for="my-dropdown">Select a value corresponding to health concerns</label></div>
+    <div class="col-lg-1"><select id="health concerns" name="health concerns">
+        <option value="0"> 0</option>
+      <option value="1"> 1</option>
+      <option value="2"> 2</option>
+      <option value="3"> 3</option>
+      <option value="4"> 4</option>
+      <option value="5"> 5</option>
+    </select></div>
+                </div>
+                <div class="dropdown row">
+                    <div class="col-lg-6"> <label for="my-dropdown">Select a value corresponding to relationship status</label></div>
+                        <div class="col-lg-1"> <select id="relationship status" name="relationship status">
+        <option value="0"> 0</option>
+      <option value="1"> 1</option>
+      <option value="2"> 2</option>
+      <option value="3"> 3</option>
+      <option value="4"> 4</option>
+      <option value="5"> 5</option>
+    </select></div>
+                </div>
+                <div class="dropdown row">
+                  <div class="col-lg-6"> <label for="my-dropdown">Select a range for your age</label></div>
+  <div class="col-lg-1"><select id="age" name="age">
+      <option value="0">18-25</option>
+    <option value="1">26-55</option>
+    <option value="2">55 and above</option>
+  </select></div>
+              </div>
+            </div>
+        </div>
+        <div class="col">
+            
+            <div class="form__submit ">
+                <button type="submit" class="calculate">
+                        Calculate
+                </button>
+                <p id="output"></p>
+            </div>
+            </div>
+    
+        </form>
+    </section>
+    
+</div>
+
+<canvas id="myChart"></canvas>
+   
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<script src="script.js"></script>
+  </body>
+</html>
